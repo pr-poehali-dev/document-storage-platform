@@ -3,11 +3,11 @@ import Icon from "@/components/ui/icon";
 
 const Navigation = () => {
   const navItems = [
+    { label: "Главная", icon: "Home", path: "/" },
     { label: "Мои документы", icon: "FileText", path: "/documents" },
-    { label: "Загрузка", icon: "Upload", path: "/upload" },
+    { label: "Общие документы", icon: "Share2", path: "/shared" },
+    { label: "Недавние", icon: "Clock", path: "/recent" },
     { label: "Папки", icon: "Folder", path: "/folders" },
-    { label: "Поиск", icon: "Search", path: "/search" },
-    { label: "Настройки", icon: "Settings", path: "/settings" },
     { label: "Корзина", icon: "Trash2", path: "/trash" },
   ];
 

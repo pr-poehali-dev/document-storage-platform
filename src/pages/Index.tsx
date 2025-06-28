@@ -71,10 +71,10 @@ const Index = () => {
           />
         </div>
 
-        {/* Upload and Recent Documents */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+        {/* Upload and Quick Actions */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
           {/* Upload Zone */}
-          <div className="lg:col-span-1">
+          <div>
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
@@ -89,7 +89,7 @@ const Index = () => {
           </div>
 
           {/* Quick Actions */}
-          <div className="lg:col-span-2">
+          <div>
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
@@ -98,30 +98,22 @@ const Index = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-2 gap-4">
                   <Button variant="outline" className="h-20 flex-col space-y-2">
                     <Icon name="FileText" size={24} />
-                    <span className="text-sm">Создать документ</span>
-                  </Button>
-                  <Button variant="outline" className="h-20 flex-col space-y-2">
-                    <Icon name="Presentation" size={24} />
-                    <span className="text-sm">Презентация</span>
+                    <span className="text-sm">Создать Word</span>
                   </Button>
                   <Button variant="outline" className="h-20 flex-col space-y-2">
                     <Icon name="Sheet" size={24} />
-                    <span className="text-sm">Таблица</span>
+                    <span className="text-sm">Создать Excel</span>
+                  </Button>
+                  <Button variant="outline" className="h-20 flex-col space-y-2">
+                    <Icon name="Presentation" size={24} />
+                    <span className="text-sm">Создать PowerPoint</span>
                   </Button>
                   <Button variant="outline" className="h-20 flex-col space-y-2">
                     <Icon name="FolderPlus" size={24} />
                     <span className="text-sm">Новая папка</span>
-                  </Button>
-                  <Button variant="outline" className="h-20 flex-col space-y-2">
-                    <Icon name="Users" size={24} />
-                    <span className="text-sm">Пригласить</span>
-                  </Button>
-                  <Button variant="outline" className="h-20 flex-col space-y-2">
-                    <Icon name="Share2" size={24} />
-                    <span className="text-sm">Поделиться</span>
                   </Button>
                 </div>
               </CardContent>
